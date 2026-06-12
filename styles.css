@@ -1,0 +1,99 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f2eb;
+  color: #3e2c23;
+}
+.encabezado{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 40px;
+}
+.titulo-cafe {
+  font-weight: bold;
+  color: #5a3e2b;
+}
+
+.buscador {
+  border-radius: 20px;
+  padding: 0.8rem;
+}
+
+.filtros .btn-filter {
+  background-color: #d9c2a7;
+  color: #3e2c23;
+  margin-right: 0.5rem;
+  border-radius: 20px;
+}
+
+.filtros .btn-filter:hover {
+  background-color: #b89b7a;
+  color: #fff;
+}
+
+.product-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.product-card .precio {
+  font-weight: bold;
+  color: #5a3e2b;
+}
+
+.btn-agregar {
+  background-color: #5a3e2b;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.btn-agregar:hover {
+  background-color: #3e2c23;
+}
+
+.btn-carrito {
+  background-color: #5a3e2b;
+  color: #fff;
+  border-radius: 25px;
+  padding: 0.8rem 1.2rem;
+  z-index: 1050;
+}
+
+.order-item {
+  background-color: #f0e6d9;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.btn-control {
+  background-color: #d9c2a7;
+  color: #3e2c23;
+}
+
+.btn-finalizar {
+  background-color: #5a3e2b;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 25px;
+  padding: 1rem;
+}
+
+.btn-finalizar:hover {
+  background-color: #3e2c23;
+}
+
+.resumen-modal {
+  background-color: #fff8f0;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.card-img-top{
+    width: 100%;
+    min-height: 40px;
+    max-height: 400px;
+}
+.productos{
+    height: 80%;
+}
