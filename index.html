@@ -28,30 +28,20 @@
                 </div>
                 <header class="mb-4">
 
-                    <input type="text" class="form-control buscador" placeholder="Buscar producto...">
-                    <div class="filtros mt-3">
-                        <button class="btn btn-filter">Todas</button>
-                        <button class="btn btn-filter">Bebidas calientes</button>
-                        <button class="btn btn-filter">Bebidas frías</button>
-                        <button class="btn btn-filter">Postres</button>
-                        <button class="btn btn-filter">Comida</button>
+                    <input type="text" class="form-control buscador" id="buscador" placeholder="Buscar producto...">
+                    <div class="mt-3">
+                        <div class="filtros"> <button class="btn btn-filter" value="Todos">Todas</button>
+                            <button class="btn btn-filter" value="Bebida caliente">Bebidas calientes</button>
+                            <button class="btn btn-filter" value="Bebida fría">Bebidas frías</button>
+                            <button class="btn btn-filter" value="Postre">Postres</button>
+                            <button class="btn btn-filter" value="Comida">Comida</button>
+                        </div>
+
                     </div>
                 </header>
 
                 <div class="row g-4 productos">
-                    <!-- Ejemplo de producto -->
-                    <!-- <div class="col-md-3">
-                        <div class="card product-card">
-                            <img src="https://via.placeholder.com/150" class="card-img-top" alt="Café Americano">
-                            <div class="card-body">
-                                <h5 class="card-title">Café Americano</h5>
-                                <p class="card-text">Café negro tradicional</p>
-                                <p class="precio">Q12.00</p>
-                                <button class="btn btn-agregar">Agregar</button>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- ... resto de productos ... -->
+
                 </div>
             </div>
 
@@ -74,10 +64,10 @@
                 <p>Subtotal: Q0.00</p>
                 <p>Impuesto: Q0.00</p>
                 <h5>Total: Q0.00</h5>
-                <button class="btn btn-finalizar w-100" data-bs-toggle="modal" data-bs-target="#resumenFinal">
-                    Finalizar Pedido
-                </button>
             </div>
+            <button class="btn btn-finalizar w-100 d-none" data-bs-toggle="modal" data-bs-target="#resumenFinal">
+                Finalizar Pedido
+            </button>
         </div>
     </div>
 
@@ -90,13 +80,16 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Productos:</p>
-                    <ul>
-                        <li>Café Latte x2 = Q36.00</li>
-                        <li>Muffin x1 = Q15.00</li>
-                    </ul>
-                    <p><strong>Total pagado: Q51.00</strong></p>
+                    <div class="container-totales">
+                        <p>Productos:</p>
+                        <ul id="listaProductos">
+                            <li>Café Latte x2 = Q36.00</li>
+                            <li>Muffin x1 = Q15.00</li>
+                        </ul>
+                        <p id="totalPagado"><strong>Total pagado: Q51.00</strong></p>
+                    </div>
                     <p>Gracias por tu compra.</p>
+                    <p>Presiona la x parta realizar otro pedido</p>
                 </div>
             </div>
         </div>
