@@ -121,8 +121,8 @@ class Carrrito {
     }
 
     obtenerSubtotal() {
-        let casi = this.total - this.impuesto
-        return casi
+        let subtotal = this.total - this.impuesto
+        return subtotal
     }
     tenerTotal() {
         let sumar = 0
@@ -300,7 +300,7 @@ const DibujarCarrito = (listaPedidos = []) => {
                 productoOperar[0].obtenerTotal()
             } else {
                 productoOperar[0].eliminarProducto()
-                actualizarCarrito()
+                actualizarCarrito(carrito1)
             }
             DibujarCarrito(pedido)
 
@@ -311,6 +311,7 @@ const DibujarCarrito = (listaPedidos = []) => {
 }
 
 const actualizarCarrito = (carrito1) => {
+
     containerTotal.innerHTML = ` <p>Subtotal: Q.${carrito1.subTotal.toFixed(2)}</p>
                 <p>Impuesto: 5%</p>
                 <h5>Total: Q.${carrito1.total.toFixed(2)}</h5>
